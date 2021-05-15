@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/api/**",
     createProxyMiddleware({
-      target: "https://localhost:5000",
+      target: "https://find-me-slot.herokuapp.com",
       changeOrigin: true,
     })
   );
